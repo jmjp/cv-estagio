@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ data['Nome'] }} - CV</title>
+</head>
+<body>
+<div class="content-container">
+    <div style="text-align: center;padding-top: 5px">
+        <img src="assets/avatar.png" height="100" width="100"/>
+    </div>
+    <div style="display: flex">
+        <div style="margin: 5% 5% 5% 5%">
+            <h5 style="text-align: center;">Olá mundo!</h5>
+            <p>Meu nome é {{ data['Nome']}}, tenho {{ data['Idade']}} anos e amo desenvolver</p>
+            <text>Estou no {{ data['Formacao']}}</text><br>
+            <text>{{ data['Descricao']}}</text>
+            <div style="margin-top: 10px">
+                <a href="{{data['Redes Sociais'][0]}}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEU6VZ////81Up0yT5xgc61+jbsvTZyXo8hFXaOirM0nSJmlrs7O1OUkRpkfQ5c1UZ1oerKHlcDp6/M9WKHHzeHV2ulxgravt9Td4Ozl6PGDkb7ByN5YbatQZ6j29/q3v9h2hrhMY6aQnMSsAnKHAAAC70lEQVR4nO3caXLiMBRFYdoihhhsQ5jDlPT+F9mdqv7bRrYQ7z7XOQug9BUWHiQzmRARERERERERERERERERqVe0IZQPCtaDHFwo62Yz/VrP3jtbrH0Sy7rYH46/YtpV1oPtX6jCbBel+2npThjq/Taa51AYmrdTH583YdHsP/r5nAnLTa/j05+w+ezv8yRsq/MQoB9hmPeegb6E5eU2DOhFWK4G+rwIw3CgD2G4Dge6ELaboXPQi7CJu4nwK6zvKUAHwvCVBHQgrFMmoQdh4jGqL2wviUB5YRP/uMKnsJ2mAtWF9XLkwjblcs2FsDqMXZh6LpQXhn06UFtYpZ7t5YX1wEczboTF/AlAaWFYP0OovPZU9pmGt9194W79sIq/Jt2uqqrytwbcxJ4NT9e6tR7soEIk8N749E2K7zjgubEe6dAi75yOboGxwrnTQ/RvRZTwIHy6e1SccF5Yj3N4UcJjbT3MhKKEh9J6mAlFCZWvyR4WJXxDqBxChPohRKgfQoT6IUSoH0KE+iFEqB9ChPqNQ1h0vKJcxWwt/aofvelsDFzNOlpECO9dH/DT+8ZUWMYgErNdfXuB8Ga7RPwCofHy2wuE59EfpQvbH9MXCNejF65st2q8QPhtu5Mhv/BmfE2TX/hhvGMqv3BpvBslv/BuvGUqv3A2+nloff+YX3gx3rmYX2j9CCC78Ga9NzO78GS9dTG7cDv679B8c2Z24e/R/9LsRy+8Wm/kzy60nobZhdb3TvmF9u8e5hYaP0p8gfB99PPQ/l2F3MKp+StDuYXWvuxC60eJ+YXm907ZhQJ/NlA+4d9ZOrrbH6WTzbyjmL+D/Oz6BNsl/H8V/y9E7TYpOz7BGveoceyn6QohQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLs0R8aFUYEFLSeAgAAAABJRU5ErkJggg==" height="30" width="30"/></a>
+                <a href="{{data['Redes Sociais'][1]}}"><img src="https://freeiconshop.com/wp-content/uploads/edd/instagram-flat.png" height="30" width="30"/></a>
+                <a href="{{data['Redes Sociais'][2]}}"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" height="30" width="30"/></a>
+            </div>
+        </div>
+        <div>
+            <table style="width:100%">
+                <tr>
+                  <th>Linguagem</th>
+                  <th>Aprendizado</th>
+                </tr>
+                <tr>
+                  <td>{{data['Conhecimentos'][0]}}</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>{{data['Conhecimentos'][1]}}</td>
+                  <td>70%</td>
+                </tr>
+                <tr>
+                    <td>{{data['Conhecimentos'][2]}}</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>{{data['Conhecimentos'][3]}}</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>{{data['Conhecimentos'][4]}}</td>
+                    <td>80%</td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+</body>
+</html>

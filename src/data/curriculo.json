@@ -1,0 +1,20 @@
+{
+    "Nome" : "João Miguel De Jesus",
+    "Idade":  23,
+    "Descricao": "Venho praticando e procurando aprender varias linguagens e melhorar minha relação com o mundo. Busco desenvolver algo simples e que facilite a vida do usuario final! espero que goste do meu trabalho",
+    "Redes Sociais": [
+        "http://facebook.com/joaomigguel",
+        "http://instagram.com/joaomigguel",
+        "https://github.com/jmjp"
+    ],
+    "Conhecimentos":[
+        "JS",
+        "PHP",
+        "Flutter",
+        "HTML5",
+        "CSS"
+    ],
+    "Formacao": "Segundo semestre de Analise e Desenvolvimento de sistemas na Universidade Poisitivo"
+
+}
+  

@@ -1,0 +1,25 @@
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url('../assets/bg-clouds.png');
+	background-position: 0px 0px;
+    background-repeat: repeat-x;
+    background-color: rgba(142,193,218,1);
+    animation: animatedBackground 40s linear infinite;
+    background-attachment: fixed;
+}
+
+.content-container{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    height: 40%;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 10px 10px 10px 10px;
+}
